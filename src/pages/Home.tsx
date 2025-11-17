@@ -1,8 +1,12 @@
+import UltimaNoticia from "../components/UltimaNoticia"
+import SessaoNoticias from "../components/SessaoNoticias"
+
 function Home() {
 
     return (
         <>
-            <h1>Oi</h1>
+            <UltimaNoticia></UltimaNoticia>
+            <SessaoNoticias></SessaoNoticias>
         </>
     )
 }

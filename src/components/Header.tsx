@@ -15,7 +15,7 @@ function Header() {
                     />
                 </div>
                 
-                <div className="flex flex-row items-center h-16 p-2 bg-[#F3F2F2]">
+                <div className="flex flex-row items-center h-16 p-4 bg-[#F3F2F2]">
 
                     <img
                     className="mr-auto w-auto h-[45px]"
