@@ -29,12 +29,12 @@ function Header() {
             </div>
 
             <ul className="group flex flex-row items-center justify-center min-w-screen h-auto text-sm bg-[#F1F0F0]">
-                <a className="text-[#DF1E26] p-2 border-r-1 border-[#DF1E26]/20 hover:bg-[#DF1E26] hover:text-white" href=""> Política </a>
-                <a className="text-[#DF1E16] p-2 border-r-1 border-[#DF1E26]/20 hover:bg-[#DF1E26] hover:text-white" href=""> Mundo </a>
-                <a className="text-[#DF1E16] p-2 border-r-1 border-[#DF1E26]/20 hover:bg-[#DF1E26] hover:text-white" href=""> Economia </a>
-                <a className="text-[#DF1E16] p-2 border-r-1 border-[#DF1E26]/20 hover:bg-[#DF1E26] hover:text-white" href=""> Ciência e Tecnologia </a>
+                <a className="text-[#DF1E26] p-2 hover:bg-[#DF1E26] hover:text-white" href=""> Política </a>
+                <a className="text-[#DF1E16] p-2 hover:bg-[#DF1E26] hover:text-white" href=""> Mundo </a>
+                <a className="text-[#DF1E16] p-2 hover:bg-[#DF1E26] hover:text-white" href=""> Economia </a>
+                <a className="text-[#DF1E16] p-2 hover:bg-[#DF1E26] hover:text-white" href=""> Ciência e Tecnologia </a>
 
-                <li> <button className="text-[#DF1E26] p-2 font-semibold hover:bg-[#DF1E26] hover:text-white"> Mais </button> </li>
+                <li> <button className="text-[#DF1E26] text-right p-2 font-semibold hover:bg-[#DF1E26] hover:text-white"> Mais </button> </li>
             </ul>
 
         </div>
