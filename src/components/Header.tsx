@@ -1,6 +1,6 @@
 import { MenuIcon } from "../assets/MenuIcon"
 import { SearchIcon } from "../assets/SearchIcon"
-import { RightArrow } from "../assets/RightArrow"
+import { RecentIcon } from "../assets/RecentIcon"
 
 function Header() {
 
@@ -38,14 +38,18 @@ function Header() {
                 <button className="text-[#DF1E26] text-right p-2 font-semibold hover:bg-[#DF1E26] hover:text-white"> Mais </button>
             </div>
 
-            <div className="flex flex-row items-center bg-white w-full h-auto p-2 px-3 text-[13px]">
+            <div className="flex flex-row items-center justify-between bg-white w-full h-auto p-2 px-3 text-[13px]">
+
                 <div className="flex flex-row items-center mr-4 text-[#DF1E26] gap-2">
-                    <p className="font-bold tracking-tighter text-[14px]"> 11:40 - QUI </p>
-                    <RightArrow></RightArrow>
-                </div>    
+                    <RecentIcon></RecentIcon>
+                    <p className="font-light tracking-tighter text-[14px]"> <span className="font-normal mr-1"> 11:40 </span> QUARTA | 19 NOV </p>
+                </div>
+
                 <a className="px-2 text-black" href=""> Esportes </a>
                 <a className="px-2 text-black" href=""> Cultura </a>
                 <a className="px-2 text-black" href=""> Saúde </a>
+                <a className="px-2 text-black font-extrabold" href=""> + </a>
+
             </div>
 
         </div>
