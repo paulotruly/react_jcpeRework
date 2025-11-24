@@ -5,7 +5,11 @@ import { ShareIcon } from "../assets/ShareIcon"
 function Noticia() {
 
     return (
-        <div>
+        <div className="relative">
+
+            {/* FECHAR */}
+            <a className="absolute bg-red-500 rounded-full h-10 w-10 top-2 right-2 z-30 text-xl font-semibold flex justify-center items-center"> X </a>
+
             {/* BARRA DA CATEGORIA */}
             <div className="bg-white w-full h-10 relative flex flex-row items-center pl-3 p-1">
                 <p className="before:content-['NOTÍCIA_'] before:text-red-500 font-semibold text-sm">| Categoria</p>
