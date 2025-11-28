@@ -1,21 +1,29 @@
-function UltimaNoticia() {
+import type { Materia, Topico } from '../pages/Home';
+
+interface UltimaNoticiaProps {
+    materia: Materia;
+}
+
+function UltimaNoticia({ materia }: UltimaNoticiaProps) {
+
+    const { titulo, legenda, imagem, topico } = materia;
 
     return (
         <div className="flex flex-col">
             <div className="relative flex flex-col justify-center items-center md:justify-start lg:justify-start">
                 <img
                     className="bg-black/40 w-full h-70 overflow-hidden object-contain"
-                    src=""
+                    src={imagem}
                     alt="" />
 
                 <div className="absolute flex flex-col w-full px-4 mt-2 bottom-6 left-0 z-30">
                     <div className="w-fit inline-block bg-[#DF1E26] px-2 py-1 rounded-lg mb-2">
-                        <p className="text-white font-semibold text-[10px]"> CATEGORIA </p>
+                        <p className="text-white font-semibold text-[10px]"> {topico.nome} </p>
                     </div>
                     
-                    <p className="text-left text-lg text-white font-bold leading-tight mb-2"> Metroviários e CBTU chegam a acordo e greve do Metrô do Recife pode terminar nesta quarta (5) </p>
+                    <p className="text-left text-lg text-white font-bold leading-tight mb-2"> {titulo} </p>
 
-                    <p className="text-left mt-1 text-white font-normal leading-tight text-[10px]"> Acordo foi mediado pelo TRT-6 e será votado pelos metroviários em assembleia às 18h desta quarta. Assim, o metrô voltaria a operar às 5h da quinta (6)
+                    <p className="text-left mt-1 text-white font-normal leading-tight text-[10px]"> {legenda}
                     </p>
                 </div>
 
