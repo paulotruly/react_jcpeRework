@@ -1,4 +1,5 @@
 import type { Materia, Topico } from '../pages/Home';
+import { Link } from 'react-router-dom';
 
 interface UltimaNoticiaProps {
     materia: Materia;
@@ -6,9 +7,10 @@ interface UltimaNoticiaProps {
 
 function UltimaNoticia({ materia }: UltimaNoticiaProps) {
 
-    const { titulo, legenda, imagem, topico } = materia;
+    const { id, titulo, legenda, imagem, topico } = materia;
 
     return (
+        <Link to={`/noticias/${id}`}>
         <div className="flex flex-col">
             <div className="relative flex flex-col justify-center items-center md:justify-start lg:justify-start">
                 <img
@@ -37,6 +39,7 @@ function UltimaNoticia({ materia }: UltimaNoticiaProps) {
                 <div className="h-10 w-100 mx-3 bg-yellow-100"></div>
             </div>
         </div>
+        </Link>
     )
 }
 

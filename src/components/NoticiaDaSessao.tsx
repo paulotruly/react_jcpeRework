@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface Materia {
   id: number;
   titulo: string;
@@ -30,9 +32,10 @@ interface NoticiaDaSessaoProps {
 
 function NoticiaDaSessao({materia}: NoticiaDaSessaoProps) {
 
-    const {imagem, topico, titulo} = materia;
+    const {id, imagem, topico, titulo} = materia;
 
     return (
+      <Link to={`/noticias/${id}`}> 
         <div className="flex flex-col h-auto">
         <img className="relative flex flex-col h-30 w-full rounded-lg"
             src={imagem} alt="" />
@@ -42,6 +45,7 @@ function NoticiaDaSessao({materia}: NoticiaDaSessaoProps) {
                 <p className="text-left text-[16px] font-semibold leading-tight tracking-tight text-black"> {titulo} </p>
             </div>
         </div>
+      </Link>
     )
 }
 
